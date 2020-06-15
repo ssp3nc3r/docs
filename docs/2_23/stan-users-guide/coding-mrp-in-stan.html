@@ -707,7 +707,7 @@ model {
   beta ~ normal(0, sigma_beta);
   gamma ~ normal(0, sigma_gamma);
   delta ~ normal(0, sigma_delta);
-  { sigma_beta, sigma_gamma, sigma_delta } ~ normal(0, 1);
+  [ sigma_beta, sigma_gamma, sigma_delta ] ~ normal(0, 1);
 }
 generated quantities {
   real expect_pos = 0;
