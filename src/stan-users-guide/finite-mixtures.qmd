@@ -607,7 +607,7 @@ if (y[n] == 0) {
   target += log(theta);
 } else {
   target += log1m(theta) + poisson_lpmf(y[n] | lambda)
-            - poisson_lccdf(0 | lambda));
+            - poisson_lccdf(0 | lambda);
 }
 ```
 
@@ -621,7 +621,7 @@ the CCDF in the else clause can be replaced with a simpler expression.
 
 ```stan
 target += log1m(theta) + poisson_lpmf(y[n] | lambda)
-          - log1m_exp(-lambda));
+          - log1m_exp(-lambda);
 ```
 
 The resulting code is about 15% faster than the code with the CCDF.
