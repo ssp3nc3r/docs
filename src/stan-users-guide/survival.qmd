@@ -451,7 +451,7 @@ is
 h(t \mid \alpha, \sigma)
 & = & \frac{p_T(t \mid \alpha, \sigma)}{S(t \mid \alpha, \sigma)}
 \\[4pt]
-& = & \frac{\textrm{Weibull}(t \mid \alpha, \sigma}{1 - \textrm{WeibullCCDF}(t \mid \alpha, \sigma)}
+& = & \frac{\textrm{Weibull}(t \mid \alpha, \sigma)}{1 - \textrm{WeibullCCDF}(t \mid \alpha, \sigma)}
 \\[4pt]
 & = & 
 \frac{\frac{\alpha}{\sigma} \cdot \left( \frac{t}{\sigma} \right)^{\alpha - 1}
